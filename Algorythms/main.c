@@ -7,6 +7,7 @@
 //
 
 #include <stdio.h>
+const int N = 4;
 
 void print_array(int *arr, int length)
 {
@@ -16,10 +17,10 @@ void print_array(int *arr, int length)
     printf("\n");
 }
 
-void swap(int arr[], int n, int k){
-    int t = arr[n];
-    arr[n] = arr[k];
-    arr[k] = t;
+void swap(int *n, int *k){
+    int t = *n;
+    *n = *k;
+    *k = t;
 }
 
 int * selection_sort(int *arr, int n){
@@ -30,7 +31,18 @@ int * selection_sort(int *arr, int n){
                 min = j;
             }
         }
-        swap(arr, i, min);
+        swap(&(arr[i]), &(arr[min]));
+    }
+    return arr;
+}
+
+int * insertion_sort(int *arr, int n){
+    for (int i = 1; i < n; i++) {
+        int j = i;
+        while ((j>0) && (arr[j] < arr[j-1])){
+            swap(&(arr[j]), &(arr[j-1]));
+            j--;
+        }
     }
     return arr;
 }
@@ -38,12 +50,19 @@ int * selection_sort(int *arr, int n){
 
 int main(int argc, const char * argv[]) {
     printf("Lets sort arrays!\n");
-    // insert code here...
-    int n = 4, arr[] = {10,5,3,4};
-    print_array(arr, n);
     
-    int *sorted_arr = selection_sort(arr, n);
-    print_array(sorted_arr, n);
+    //Selection sort
+    int arr1[] = {10,5,3,4};
+    print_array(arr1, N);
+    selection_sort(arr1, N);
+    print_array(arr1, N);
+    
+    //Insertion sort
+    int arr2[] = {10,5,3,4};
+    print_array(arr2, N);
+    insertion_sort(arr2, N);
+    print_array(arr2, N);
+
     
     return 0;
 }
