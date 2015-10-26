@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		265F04AD1BDB25B600AED274 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 265F04AC1BDB25B600AED274 /* main.c */; };
+		265F04BC1BDDD2C900AED274 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 265F04BA1BDDD2C900AED274 /* common.c */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		265F04A91BDB25B600AED274 /* Algorythms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorythms; sourceTree = BUILT_PRODUCTS_DIR; };
 		265F04AC1BDB25B600AED274 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		265F04BA1BDDD2C900AED274 /* common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
+		265F04BB1BDDD2C900AED274 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +60,19 @@
 		265F04AB1BDB25B600AED274 /* Algorythms */ = {
 			isa = PBXGroup;
 			children = (
+				265F04B31BDDCEE700AED274 /* Sortings */,
 				265F04AC1BDB25B600AED274 /* main.c */,
 			);
 			path = Algorythms;
+			sourceTree = "<group>";
+		};
+		265F04B31BDDCEE700AED274 /* Sortings */ = {
+			isa = PBXGroup;
+			children = (
+				265F04BA1BDDD2C900AED274 /* common.c */,
+				265F04BB1BDDD2C900AED274 /* common.h */,
+			);
+			name = Sortings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +131,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				265F04BC1BDDD2C900AED274 /* common.c in Sources */,
 				265F04AD1BDB25B600AED274 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +249,7 @@
 				265F04B21BDB25B600AED274 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
