@@ -37,6 +37,13 @@ int main(int argc, const char * argv[]) {
     merge_sort(arr3, N);
     print_array(arr3, N);
     
+    //Heap
+    int arr4[] = {10,5,3,4};
+    N = sizeof(arr4)/sizeof(arr4[0]);
+    //TODO: priority_queue q;
+    //heapsort
+    print_array(arr4, N);
+    
     return 0;
 }
 

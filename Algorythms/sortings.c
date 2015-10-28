@@ -59,7 +59,7 @@ void merge_sort(int *arr, int n){
     if(n < 2) return; //don't need to sort an array with one element
     
     //find the middle
-    middle = n/2;
+    middle = (int)n/2;
     
     //create left and right subarrays
     left_arr = (int*)malloc(middle * sizeof(int));
