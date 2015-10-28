@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		265F04AD1BDB25B600AED274 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 265F04AC1BDB25B600AED274 /* main.c */; };
 		265F04BC1BDDD2C900AED274 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 265F04BA1BDDD2C900AED274 /* common.c */; settings = {ASSET_TAGS = (); }; };
+		26F4AB201BE06856007B3262 /* heap.c in Sources */ = {isa = PBXBuildFile; fileRef = 26F4AB1E1BE06856007B3262 /* heap.c */; settings = {ASSET_TAGS = (); }; };
+		26F4AB251BE068C6007B3262 /* sortings.c in Sources */ = {isa = PBXBuildFile; fileRef = 26F4AB231BE068C6007B3262 /* sortings.c */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,10 @@
 		265F04AC1BDB25B600AED274 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		265F04BA1BDDD2C900AED274 /* common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
 		265F04BB1BDDD2C900AED274 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		26F4AB1E1BE06856007B3262 /* heap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = heap.c; sourceTree = "<group>"; };
+		26F4AB1F1BE06856007B3262 /* heap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = heap.h; sourceTree = "<group>"; };
+		26F4AB231BE068C6007B3262 /* sortings.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sortings.c; sourceTree = "<group>"; };
+		26F4AB241BE068C6007B3262 /* sortings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sortings.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 		265F04AB1BDB25B600AED274 /* Algorythms */ = {
 			isa = PBXGroup;
 			children = (
+				26F4AB221BE0688D007B3262 /* Data Structures */,
 				265F04B31BDDCEE700AED274 /* Sortings */,
 				265F04AC1BDB25B600AED274 /* main.c */,
 			);
@@ -71,8 +78,19 @@
 			children = (
 				265F04BA1BDDD2C900AED274 /* common.c */,
 				265F04BB1BDDD2C900AED274 /* common.h */,
+				26F4AB231BE068C6007B3262 /* sortings.c */,
+				26F4AB241BE068C6007B3262 /* sortings.h */,
 			);
 			name = Sortings;
+			sourceTree = "<group>";
+		};
+		26F4AB221BE0688D007B3262 /* Data Structures */ = {
+			isa = PBXGroup;
+			children = (
+				26F4AB1E1BE06856007B3262 /* heap.c */,
+				26F4AB1F1BE06856007B3262 /* heap.h */,
+			);
+			name = "Data Structures";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,7 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26F4AB251BE068C6007B3262 /* sortings.c in Sources */,
 				265F04BC1BDDD2C900AED274 /* common.c in Sources */,
+				26F4AB201BE06856007B3262 /* heap.c in Sources */,
 				265F04AD1BDB25B600AED274 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
