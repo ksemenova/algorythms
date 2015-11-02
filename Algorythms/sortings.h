@@ -9,8 +9,6 @@
 #ifndef sortings_h
 #define sortings_h
 
-#include <stdio.h>
-
 void selection_sort(int *arr, int n);
 void insertion_sort(int *arr, int n);
 void merge_sort(int *arr, int n);

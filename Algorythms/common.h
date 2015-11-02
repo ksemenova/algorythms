@@ -9,8 +9,6 @@
 #ifndef common_h
 #define common_h
 
-#include <stdio.h>
-
 void print_array(int *arr, int length);
 
 void swap(int *n, int *k);
