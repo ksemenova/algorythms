@@ -39,7 +39,7 @@ int main(int argc, const char * argv[]) {
     print_array(arr3, N);
     
     printf("Heap sort\n");
-    int arr4[] = {10,5,3,4};
+    int arr4[] = {10,5,3,4,3,1,2,22,1};
     N = sizeof(arr4)/sizeof(arr4[0]);
     print_array(arr4, N);
     heap_sort(arr4, N);
