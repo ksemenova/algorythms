@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		265F04AD1BDB25B600AED274 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 265F04AC1BDB25B600AED274 /* main.c */; };
-		265F04BC1BDDD2C900AED274 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 265F04BA1BDDD2C900AED274 /* common.c */; settings = {ASSET_TAGS = (); }; };
-		26F4AB201BE06856007B3262 /* heap.c in Sources */ = {isa = PBXBuildFile; fileRef = 26F4AB1E1BE06856007B3262 /* heap.c */; settings = {ASSET_TAGS = (); }; };
-		26F4AB251BE068C6007B3262 /* sortings.c in Sources */ = {isa = PBXBuildFile; fileRef = 26F4AB231BE068C6007B3262 /* sortings.c */; settings = {ASSET_TAGS = (); }; };
+		265F04BC1BDDD2C900AED274 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 265F04BA1BDDD2C900AED274 /* common.c */; };
+		26F4AB201BE06856007B3262 /* heap.c in Sources */ = {isa = PBXBuildFile; fileRef = 26F4AB1E1BE06856007B3262 /* heap.c */; };
+		26F4AB251BE068C6007B3262 /* sortings.c in Sources */ = {isa = PBXBuildFile; fileRef = 26F4AB231BE068C6007B3262 /* sortings.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +47,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26409D471BE9D54500EF1841 /* Data Structures */ = {
+			isa = PBXGroup;
+			children = (
+				26F4AB1E1BE06856007B3262 /* heap.c */,
+				26F4AB1F1BE06856007B3262 /* heap.h */,
+			);
+			name = "Data Structures";
+			sourceTree = "<group>";
+		};
+		26409D481BE9D57400EF1841 /* Sortings */ = {
+			isa = PBXGroup;
+			children = (
+				26F4AB231BE068C6007B3262 /* sortings.c */,
+				26F4AB241BE068C6007B3262 /* sortings.h */,
+			);
+			name = Sortings;
+			sourceTree = "<group>";
+		};
 		265F04A01BDB25B500AED274 = {
 			isa = PBXGroup;
 			children = (
@@ -66,31 +84,13 @@
 		265F04AB1BDB25B600AED274 /* Algorythms */ = {
 			isa = PBXGroup;
 			children = (
-				26F4AB221BE0688D007B3262 /* Data Structures */,
-				265F04B31BDDCEE700AED274 /* Sortings */,
+				265F04BA1BDDD2C900AED274 /* common.c */,
+				265F04BB1BDDD2C900AED274 /* common.h */,
+				26409D481BE9D57400EF1841 /* Sortings */,
+				26409D471BE9D54500EF1841 /* Data Structures */,
 				265F04AC1BDB25B600AED274 /* main.c */,
 			);
 			path = Algorythms;
-			sourceTree = "<group>";
-		};
-		265F04B31BDDCEE700AED274 /* Sortings */ = {
-			isa = PBXGroup;
-			children = (
-				265F04BA1BDDD2C900AED274 /* common.c */,
-				265F04BB1BDDD2C900AED274 /* common.h */,
-				26F4AB231BE068C6007B3262 /* sortings.c */,
-				26F4AB241BE068C6007B3262 /* sortings.h */,
-			);
-			name = Sortings;
-			sourceTree = "<group>";
-		};
-		26F4AB221BE0688D007B3262 /* Data Structures */ = {
-			isa = PBXGroup;
-			children = (
-				26F4AB1E1BE06856007B3262 /* heap.c */,
-				26F4AB1F1BE06856007B3262 /* heap.h */,
-			);
-			name = "Data Structures";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
