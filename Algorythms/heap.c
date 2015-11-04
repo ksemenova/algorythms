@@ -28,7 +28,8 @@ void bubble_up(priority_queue *q, int p)
     if (!(parent_index == -1)){
         printf("Buble_up %d\n", q->arr[p]);
         if (q->arr[parent_index] > q->arr[p]){
-        swap(&(q->arr[parent_index]), &(q->arr[p]));
+            swap(&(q->arr[parent_index]), &(q->arr[p]));
+            bubble_up(q, parent_index);
         }
     }
 }
