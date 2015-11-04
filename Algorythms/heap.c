@@ -20,7 +20,6 @@ int pr_child(int n)
     return (2 * n);
 }
 
-//move element to the right position
 void bubble_up(priority_queue *q, int p)
 {
     int parent_index = pq_parent(p);
