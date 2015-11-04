@@ -93,6 +93,7 @@ int extract_min(priority_queue *q)
 void heap_sort(int *s, int size)
 {
     priority_queue q;
+    
     make_heap(&q, s, size);
     for (int i=0; i<size; i++){
         s[i] = extract_min(&q);

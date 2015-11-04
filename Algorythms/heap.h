@@ -23,6 +23,7 @@ int pr_child(int n);
 void pq_insert(priority_queue *q, int x);
 void make_heap(priority_queue *q, int arr[], int size);
 int extract_min(priority_queue *q);
+
 void heap_sort(int *s, int size);
 
 
