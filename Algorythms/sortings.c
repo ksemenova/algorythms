@@ -78,7 +78,68 @@ void merge_sort(int *arr, int n){
     free(right_arr);
 }
 
-//TODO: heap sort, not stable, O(n (log(n))), better for heaps
 
-//TODO: quick sort, not stable, O(n (log(n))), can be about two or three times faster than merge_sort or heap_sort
+
+//-----------------  Quick sort, not stable, O(n (log(n))), can be about two or three times faster than merge_sort or heap_sort
+
+//Version 1: select the latest element as a pivot element
+int partition1(int *arr, int left, int right){
+    int pivot = right; //let's select the latest element as pivot
+    int first_high = left;
+    
+    for (int i = left; i < right; i++) {
+        if (arr[i] < arr[pivot]) {
+            swap(&arr[first_high], &arr[i]);
+            first_high ++;
+        }
+    }
+    
+    swap(&arr[pivot], &arr[first_high]);
+    
+    return first_high;
+}
+
+void quick_sort1(int *arr, int left, int right){
+    
+    if ((right - left) > 0){
+        int p = partition1(arr, left, right);
+        quick_sort1(arr, left, p - 1);
+        quick_sort1(arr, p + 1, right);
+    }
+}
+
+//Version 2: select the middle element as a pivot element
+int partition2(int *arr, int left, int right){
+    int middle = (left+right)/2; //select the middle element as a pivot
+    
+    while(left <= right)
+    {
+        while(arr[left] < arr[middle]) left++;
+    
+        while (arr[right] > arr[middle]) right--;
+    
+        if (left <= right){
+            swap(&arr[left], &arr[right]);
+            left++;
+            right--;
+        }
+    }
+    return left;
+}
+
+void quick_sort2(int *arr, int left, int right){
+    int p = partition2(arr, left, right);
+    if (left < p - 1) {
+        quick_sort2(arr, left, p - 1);
+    }
+    
+    if (p < right) {
+        quick_sort2(arr, p, right);
+    }
+}
+
+
+
+
+
 

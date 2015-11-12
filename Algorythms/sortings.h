@@ -12,5 +12,7 @@
 void selection_sort(int *arr, int n);
 void insertion_sort(int *arr, int n);
 void merge_sort(int *arr, int n);
+void quick_sort1(int *arr, int left, int right);
+void quick_sort2(int *arr, int left, int right);
 
 #endif /* sortings_h */

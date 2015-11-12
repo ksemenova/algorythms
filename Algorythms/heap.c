@@ -6,6 +6,8 @@
 //  Copyright © 2015 abc. All rights reserved.
 //
 
+//heap sort, not stable, O(n (log(n))), better for heaps
+
 #include "heap.h"
 #include "common.h"
 

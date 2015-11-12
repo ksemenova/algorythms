@@ -26,14 +26,14 @@ int main(int argc, const char * argv[]) {
     
     printf("Insertion sort\n");
     int arr2[] = {10,5,3,4};
-    N = sizeof(arr2)/sizeof(arr1[0]);
+    N = sizeof(arr2)/sizeof(arr2[0]);
     print_array(arr2, N);
     insertion_sort(arr2, N);
     print_array(arr2, N);
     
     printf("Merge sort\n");
     int arr3[] = {10,5,3,4};
-    N = sizeof(arr3)/sizeof(arr1[0]);
+    N = sizeof(arr3)/sizeof(arr3[0]);
     print_array(arr3, N);
     merge_sort(arr3, N);
     print_array(arr3, N);
@@ -44,6 +44,21 @@ int main(int argc, const char * argv[]) {
     print_array(arr4, N);
     heap_sort(arr4, N);
     print_array(arr4, N);
+    
+    printf("Quick sort v1, the latest element is a pivot\n");
+    int arr5[] = {10,5,3,4,3,1,2,22,1};
+    N = sizeof(arr5)/sizeof(arr5[0]);
+    print_array(arr5, N);
+    quick_sort1(arr5, 0, N);
+    print_array(arr5, N);
+    
+    printf("Quick sort v2: the middle element is a pivot\n");
+    int arr6[] = {10,5,3,4,3,1,2,22,1};
+    N = sizeof(arr6)/sizeof(arr6[0]);
+    print_array(arr6, N);
+    quick_sort2(arr6, 0, N);
+    print_array(arr6, N);
+    
     return 0;
 }
 
